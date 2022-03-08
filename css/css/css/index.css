@@ -1,0 +1,965 @@
+/* In the name of Allah */
+/* This is a style for our website  */
+
+/* some main styles for whole website */
+
+* {
+  box-sizing: border-box !important;
+}
+/* Setting the font to calibri */
+@font-face {
+  font-family: digFont;
+  src: url("../fonts/calibri.ttf");
+}
+body {
+  margin: 0;
+  padding: 0;
+  font-family: digFont;
+  direction: rtl;
+  position: relative !important;
+ 
+}
+
+
+/* setting the color for our web App */
+:root {
+  --DigBlue: #00adef;
+  --White: #ffffdf;
+  --DigGray: #b3b6b0;
+  --DigBlack: #221f20;
+}
+a {
+  text-decoration: none;
+}
+a:hover,
+a:active {
+  text-decoration: none !important;
+}
+
+/* Initail style for Header,Main,Footer */
+
+@media (max-width: 576px) {
+  .s-icons {
+    display: none;
+  }
+  .language {
+    width: 50%;
+  }
+  .searchbar {
+    width: 50%;
+  }
+}
+
+/* styleing the topest header */
+.topHeader {
+  height: 2.3rem;
+}
+.language {
+  display: flex !important;
+  align-items: center !important;
+}
+.language a:hover,
+.language a:active,
+.language a.active {
+  color: var(--DigBlue) !important;
+}
+
+.social a {
+  opacity: 0.5;
+}
+.social a:hover {
+  opacity: 1;
+}
+/* Styleing the seach input
+.search {
+    width: 100%;
+    position: relative;
+    display: flex;
+  }
+  
+  .searchTerm {
+    border: 1px solid #00B4CC;
+    border-left: none;
+    padding: 10px 0;
+    height: 20px;
+    outline: none;
+    color: #9DBFAF;
+    border-radius: 0 5px 5px 0;
+
+  }
+  
+  .searchTerm:focus{
+    color: #00B4CC;
+  }
+  
+  .searchButton {
+    width: 30px;
+    border: 1px solid #00B4CC;
+    background: #00B4CC;
+    text-align: center;
+    color: #fff;
+    height: 22px;
+    cursor: pointer;
+    border-radius: 5px 0 0 5px;
+    outline: none !important;
+    font-size: 10px;
+  }
+   */
+
+/* end of the topest Header */
+
+/* start of menu bar */
+header{
+  z-index: 1000 !important;
+}
+main{
+  z-index: 999 !important;
+}
+footer{
+  z-index: 999 !important;
+}
+.activeMenu{
+    border-bottom: 1px solid var(--White);  
+    border-radius: 5px;
+}
+.navbar {
+  background-color: var(--DigBlue) !important;
+}
+.navbar-nav {
+  padding: 0 !important;
+  position: relative;
+  width: 100% !important;
+}
+.navbar-nav li a {
+  color: var(--White);
+  font-size: 1.2rem;
+  padding: 10px 12px;
+  margin: 0 !important;
+}
+.navbar-nav li a:hover {
+  border-bottom: 1px solid var(--White);
+  transition-property: all;
+  transition-duration: 1s;
+  border-radius: 5px;
+  transition-timing-function: ease-in-out;
+}
+button.navbar-toggler {
+  outline: none;
+  height: 100%;
+}
+.navbar-toggler i {
+  color: #fff !important;
+}
+.navbar-brand {
+  color: white;
+}
+.brand {
+  position: absolute;
+  left: 4rem;
+  top: 0rem;
+  padding: 10px;
+}
+
+/* media query for brand class */
+@media (max-width: 576px) {
+  .brand {
+    left: 0;
+  }
+  .navbar-brand {
+    margin-left: 0 !important;
+    padding-left: 0 !important;
+  }
+}
+@media (max-width: 991px) {
+  .navbar-nav li a {
+    font-size: 1rem;
+  }
+}
+@media (max-width: 576px) {
+  .navbar-nav li a {
+    text-align: center;
+  }
+}
+
+/******************************************* 
+The Starting point of main part 
+**************************************/
+
+
+/* The style of img slider */
+/*********************************************** end of img slider ***************************************/
+
+
+
+/************************** The start point of styling  news *************************************************/
+.newsTitle {
+  border-bottom: 1px solid;
+  border-color: #221f20;
+  display: inline-block;
+  color: #221f20 !important;
+}
+
+/************ Every news  title which is #00adef ************/
+.news-title {
+  color: #00adef !important;
+}
+
+/************ media for news ***************/
+
+@media (max-width: 1130px) {
+  .button a {
+    margin-top: 10px !important;
+  }
+  .details h4 {
+    font-size: 20px;
+    font-weight: bold;
+  }
+  .MainNews {
+    font-size: 20px;
+    font-weight: bold;
+  }
+}
+
+@media (max-width: 986px) {
+  .details h4 {
+    font-size: 16px;
+    font-weight: bold;
+  }
+  .MainNews {
+    font-size: 16px;
+    font-weight: bold;
+  }
+  .button a {
+    margin-top: 5px !important;
+  }
+}
+@media (max-width: 576px) {
+  .details p,
+  .details h4 {
+    padding: 0 !important;
+  }
+  .details p {
+    margin-bottom: 0 !important;
+  }
+}
+
+/**************** The second news row style ***************/
+.secondNewsrow {
+  border-right: 1px solid;
+  border-color: var(--DigGray);
+}
+
+@media (max-width: 768px) {
+  .img-second {
+    margin-bottom: 10px;
+    max-height: 100px;
+  }
+  .secondNewsrow {
+    border-right: none;
+  }
+}
+/*******************  Adjsuting for mobile zoon************* */
+@media (max-width: 576px) {
+
+  .secondNewsrow {
+    border-right: none;
+  }
+}
+
+/* start of carousel */
+
+.carousel-caption a{
+ padding: 20px 80px;
+  font-size: 2rem;
+  outline: none;
+}
+.carousel-caption a:hover{
+  background-color: #fff;
+  color: #221f20;
+  outline: white;
+}
+/* end of style of carousel */
+/************************************** the end of style of news******************************* */
+
+/************ A horizontal line *************/
+.spliter {
+  border-bottom: 1px solid gray;
+  width: 90%;
+
+  margin: 50px auto;
+}
+
+/******************************************** Start of brand ************************************/
+
+.OneBrand {
+  text-align: center;
+  margin-bottom: 80px;
+  position: relative;
+  width: 80%;
+  margin-right: 0;
+  margin-left: 0;
+}
+.OneBrand .pic {
+  border-radius: 4px;
+  overflow: hidden;
+}
+
+.OneBrand img {
+  transition: all ease-in-out 0.4s;
+  border: 1px solid gray;
+  border-bottom: none;
+}
+
+.OneBrand:hover img {
+  transform: scale(1.1);
+}
+
+.OneBrand .brand-info {
+  position: absolute;
+  bottom: -80px;
+  left: 20px;
+  right: 20px;
+  background: linear-gradient(
+    360deg,
+    #00adef 0%,
+    rgba(0, 173, 239, 0.9) 35%,
+    rgba(0, 173, 239, 0.8) 100%
+  );
+  padding: 15px 0;
+  border-radius: 4px;
+}
+
+.OneBrand h4 {
+  font-weight: 700;
+  margin-bottom: 10px;
+  font-size: 16px;
+  color: #ffffff;
+  position: relative;
+  padding-bottom: 10px;
+}
+
+.OneBrand h4::after {
+  content: "";
+  position: absolute;
+  display: block;
+  width: 50px;
+  height: 1px;
+  background: #ffffff;
+  bottom: 0;
+  left: calc(50% - 25px);
+}
+
+.OneBrand span {
+  display: block;
+  font-size: 13px;
+  color: #ffffff;
+}
+
+.OneBrand .brand-social {
+  margin-top: 15px;
+}
+
+.OneBrand .brand-social a {
+  transition: color 0.0s;
+  color: rgb(255, 255, 255) !important;
+}
+
+.OneBrand .brand-social a:hover {
+  color: #221f !important;
+}
+
+.OneBrand .brand-social i {
+  font-size: 16px;
+  margin: 0 2px;
+}
+
+@media (max-width: 992px) {
+  .OneBrand {
+    margin-bottom: 100px;
+  }
+}
+
+/* Styling the services */
+footer {
+  background-color: #00adef;
+}
+.services {
+  box-sizing: border-box !important;
+}
+
+.services-cover {
+  background-color: #fcfcfc;
+  border-radius: 5px;
+  box-shadow: 1px 1px 10px rgb(236, 234, 234);
+  cursor: pointer;
+  transition: all ease-in-out 0.4s;
+}
+
+.services-cover:hover {
+  transform: scale(1.02);
+}
+
+/* End of services style */
+
+/* Style of footer */
+.quick-access-title {
+  border-bottom: 1px solid;
+  width: 50%;
+  margin-left: auto;
+  margin-right: auto;
+  border-color: white;
+  padding-bottom: 10px;
+}
+.quick-access-list a {
+  padding: 3px;
+  display: inline;
+}
+.quick-access-list a:hover {
+  border-bottom: 1px solid #fff;
+}
+.quick-access-social a {
+  padding: 3px;
+  display: inline;
+  opacity: 0.5;
+}
+.quick-access-social a img {
+  width: 32px !important;
+}
+
+.quick-access-social a:hover {
+  opacity: 1;
+}
+/* 
+.facebook:hover{
+    color: #080ab8;
+    font-size: 2rem;
+}
+.whatsapp:hover{
+     color: #10f82f;
+     font-size: 2rem;
+}
+.youtube:hover{
+    color: #ef2400;
+    font-size: 2rem;
+}
+.instagram:hover{
+    color: #cc104e;
+    font-size: 2rem;
+}
+.flickr:hover{
+    color: blueviolet;
+    font-size: 2rem;
+}
+.twitter:hover{
+    color:#00e7ef ;
+    font-size: 2rem;
+} */
+@media (max-width: 767px) {
+  .quick-access-social {
+    display: flex;
+    flex-direction: row !important;
+  }
+}
+
+/* End of footer style */
+
+/* **************   Styling for Sticky social media ****************** */
+.sticky-media {
+  position: fixed;
+  right: 15px;
+  top: calc(100vh / 4);
+  opacity: 1;
+}
+.sticky-media li a img {
+  width: 32px;
+}
+.sticky-media li a {
+  transition: all ease-in-out 0.4s;
+}
+.sticky-media li a:hover {
+  transform: scale(1.3);
+}
+@media (max-width: 576px) {
+  .sticky-media {
+    display: none;
+  }
+}
+
+.animateSticky{
+  position: absolute;
+  animation-name: example;
+  animation-duration: 4s
+}
+@keyframes example {
+  0%   {opacity:1; top:0px;}
+  25%  {opacity: 0.7; top:100px;}
+  50%  {opacity: 0.4; top:200px;}
+  75%  {opacity: 0.2;  top:500px;}
+  100% {opacity: 0; top:700px;}
+}
+
+/****************************************************************************
+  Starting point for style of the news page
+******************************************************************************/
+
+/* start of news cards */
+
+.newsCover {
+  border: 1px solid #00adef;
+}
+
+.t-wrapper{
+    height: 90px;
+    overflow: hidden;
+    position: relative;
+}
+.fader{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    background: -webkit-linear-gradient(
+        rgba(255, 255, 255, 0) 0%,
+        rgba(255, 255, 255, 1) 100%
+    );
+
+}
+
+/* End of news cards */
+
+/****************************************************************************
+  End of style of news page
+******************************************************************************/
+
+
+
+
+
+
+
+
+
+
+
+/****************************************************************************
+    start of Products
+******************************************************************************/
+.productDes{
+    background-color: #00adef;
+}
+
+@media(max-width:576px){
+    .aboutBrandInProduct{
+        margin-top:130px;
+    }
+    .brandNameInProduct{
+        justify-content: center !important;
+        font-size:80px;
+        padding-left: 0 !important;
+        padding-right: 0 !important;
+
+    }
+    .brandImgInProduct{
+      justify-content: center !important;
+      padding-right: 0 !important;
+      padding-left: 0 !important;
+    }
+}
+
+.productsCard{
+  transition: all ease-in-out 0.5s ;
+}
+.productsCard:hover{
+  transform: scale(1.05);
+}
+/****************************************************************************
+  End of Products
+******************************************************************************/
+
+
+
+/****************************************************************************
+ start of style of store general page
+******************************************************************************/
+	.storeCardCover{
+    box-shadow: 1px 1px 5px #00adef;
+  }
+  .storeCardCover a.btn-primary:hover{
+      background-color: #fff;
+      color: #221f20;
+  }
+  .newsCards{
+    transition:all ease-in-out 0.5s;
+  }
+  .newsCards:hover{
+      transform: scale(1.02);
+     
+  }
+/****************************************************************************
+  End of Store general page
+******************************************************************************/
+
+
+
+/* ***********************  style of bubbles of footer */
+
+
+/* **********************    End of Style of bubbles for footer */
+
+
+
+
+/****************************************************************************
+start of Brands style
+******************************************************************************/
+
+.brands{
+  transition:all ease-in-out 0.5s; 
+}
+.brands:hover{
+  cursor: pointer;
+  transform: scale(1.03);
+}
+.img-brand{
+  border: 1px solid #00adef;
+  filter: grayscale(100%);
+}
+.img-brand:hover{
+  filter: grayscale(0%);
+}
+/****************************************************************************
+  End of Brands style
+******************************************************************************/
+
+
+
+
+/* ************************* Style for single store page ******************************** */
+/* start of image gallery */
+.galleryImage {
+  display: block;
+  width: 100%;
+  height: auto;
+  cursor: pointer;
+  transition: all ease-in-out 0.4s;
+} 
+.singleImage{
+  position: relative;
+  z-index: 3;
+}
+.zoom{
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: 200;
+  display: none;
+  cursor: pointer;
+}
+.zoom::before{
+  position: absolute;
+  top: 0;
+  right: 0;
+  content: "زوم ";
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50px;
+  height: 50px;
+  z-index: 2001;
+  background-color: #11aaee;
+  border-radius: 50%;
+}
+
+.galleryImage:hover{
+    filter: grayscale(100%);
+    transform: scale(1.05);
+}
+
+
+/* style of the modal  */
+.singleStoreMain{
+  position: relative;
+}
+.galleryModalCover{
+  background-color: black;
+  cursor: pointer;
+  position: fixed;
+  top:0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 20000;
+  opacity: 0.9;
+  transition: all ease-in-out 0.4s;
+  display: none;
+}
+.galleryModal{
+  width: 80%;
+  height: auto;
+  background-color: white;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  -ms-transform: translate(-50%, -50%);
+  z-index: 20001;
+  transition: all ease-in-out 0.4s;
+  display: none;
+}
+
+/* end of image gallery */
+/* ************************End of single store page  ************************* */
+
+
+
+
+/* youtube IFrame for Home page */
+@media(max-width:786px){
+  .youtubeIFrame{
+    height: 215px;
+  }
+}
+/*end of style youtube IFrame for Home page */
+
+
+
+
+
+
+
+/*******************************************  start contact us par*********************************/
+/* stylng for contact us*/
+
+.textborder{
+  border-left: 1px solid #00adef;
+}
+.icon-fa
+{
+  color:#00adef ;
+}
+.icon-fa:hover{
+  transform: scale(1.1);
+  cursor: pointer;
+}
+div a{
+  color: black !important;
+}
+div a:hover{
+  color: #00adef !important;
+}
+.form-style{
+  border: 1px solid #00adef;
+  box-shadow: 1px 1px 10px gray;
+}
+.input-style{
+  box-shadow: 2px 2px 2px gray;
+}
+
+.input-hover:hover{
+  border: 1px solid #00adef;
+}
+.btn-style{
+  font-weight: bold;
+color: #000;
+box-shadow: 1px 1px 5px #00adef;
+}
+.btn-style:hover{
+background-color: #11aaee;
+color: #fff;
+
+}
+/****************************************************************************
+End contact us part
+******************************************************************************/
+
+
+
+/**********************************  Start job part******************************************/
+.backpic{
+background-image: url(' ../../assets/images/job/subscribe-bg.jpg');
+ background-size: cover;
+ background-repeat: no-repeat;
+ height: 400px;
+}
+.job-style{
+  background-color: #00adef;
+  height: auto;
+  opacity: 0.7;
+}
+.job-style h3{
+  opacity: 1 !important;
+  color:#fff;
+}
+
+/****************************************************************************
+End end job part
+******************************************************************************/
+
+
+
+/****************************************** start history part**********************************/
+
+.right-sidebar a {
+  display: inline-block;
+  background: #e5e5e5;
+  -webkit-transition: all .4s;
+  transition: all .4s;
+  border-bottom: 1px solid #ccc;
+}
+.right-sidebar a{
+  padding: 15px;
+  width: 100%;
+  color: #555;
+
+}
+.right-sidebar a:hover{
+  background-color: #00adef;
+  color: #fff !important;
+}
+.history-img{
+  height: 200px;
+  border: 1px solid #00adef;
+  border-radius: 5px;
+  
+}
+.history-img:hover{
+  transform: scale(1.1);
+  cursor: pointer;
+}
+
+/****************************************************************************
+End end history part
+******************************************************************************/
+
+/*************************************   start company part ***************************************/
+.card-style{
+  background-color:#fff ;
+  border: 1px solid #00adef;
+  border-radius: 5px;
+  box-shadow: 1px 1px 10px gray;
+  cursor: pointer;
+}
+.card-style:hover{
+  transform: scale(0.9);
+}
+.footer-card{
+background-color: #00adef;
+}
+.footer-card a {
+
+      transition: color 0.3s;
+      color: rgb(255, 255, 255) !important;
+}     
+   
+.footer-card a:hover {
+      color: #221f !important;
+    }
+
+
+/****************************************************************************
+End end company part
+******************************************************************************/
+
+
+/********************************************start activity part********************************/
+.activity-img{
+  border-radius:10px;
+}
+.activity-img:hover{
+  border: 1px solid #00adef;
+}
+.text{
+  color: #00adef;
+}
+.border:hover{
+  border: 1px solid #00adef !important;
+}
+.border{
+  box-shadow: 1px 1px 10px gray;
+}
+
+
+/****************************************************************************
+End end activity part
+******************************************************************************/
+
+/* START OF SEVERICES PART */
+.serviceList{
+  list-style: none;
+  background-color: #00adef;
+  border-left: 100px solid white !important;
+  /* border-radius: 50% 5px 5px 5px; */
+  position: relative;
+
+}
+.serviceList li{
+  padding:10px; 
+  color: white;
+}
+.servicestitle{
+  position: absolute;
+  left: -25px;
+  top: -25px;
+  background-color: white;
+  /* border: 1px solid black; */
+  border-radius: 50%;
+  width: 140px;
+  height: 140px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: large;
+
+}
+@media(max-width:576px){
+  .servicestitle{
+    width: 100px;
+    height: 100px;
+  }
+}
+
+.seviceListcolumn{
+  border-right: 1px solid white;
+}
+
+#infographics{
+  position: relative;
+}
+
+/* END OF SEVERICES PART */
+
+/********************************************** start message***********************************************/
+.message-img{
+height: 300px;
+}
+.message-img:hover{
+  transform: scale(0.9);
+}
+
+
+
+
+
+/* navigator to the top */
+.topNavigator{
+  position: relative;
+}
+.topNavigatorImg{
+  position: absolute;
+  bottom: -250px;
+  right: 30px;
+  animation: navigator 0.9s ease-in-out  infinite;
+  transition: all ease-in-out 0.9s;
+}
+@keyframes navigator{
+    0%{
+        transform: scale(1);
+    }
+    100%{
+      transform:scale(1.3);
+    }
+
+}
+
+/*end navigator to the top */

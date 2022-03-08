@@ -1,0 +1,36 @@
+.dropdown:hover .dropdown-menu{
+        display: block;
+       
+    }
+    .dropdown-menu{
+        margin-top: 0;
+        /* z-index: 1000 !important; */
+    }
+    .myDropDown{
+        /* z-index: 10000 !important; */
+    }
+
+    .productBrandsList ul{
+        list-style: none !important;
+    }
+    .productBrandsList ul li{
+        text-align: start !important;
+    }
+    .productBrandsList ul li a:hover{
+        color: white;
+        display: block !important;
+        background-color: #00adef;   
+    }
+    .productBrandsList ul li{
+        padding-bottom: 10px !important;
+    }
+
+    .aboutUs a:hover{
+        color: white;
+        display: block !important;
+        background-color: #00adef;   
+    }
+    .ourProductsOnDropDown{
+        border-bottom: 1px solid #757475;
+        padding-bottom: 10px !important;
+    }

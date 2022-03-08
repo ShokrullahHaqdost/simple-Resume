@@ -1,0 +1,189 @@
+/* border box fix */
+@font-face{
+    src:url('../fonts/Georgia\ Bold\ Italic\ font.ttf');
+    font-family: 'ArashFont';
+   
+}
+@font-face{
+    src: url('../fonts/seriffic.ttf');
+    font-family: 'goodFont';
+}
+
+/* Global style
+-------------------------*/
+html{
+    box-sizing: border-box;
+}
+*,*::before, *::after{
+    box-sizing: inherit;
+}
+body{
+    font-family: ArashFont;
+    margin: 0;
+    
+}
+
+a{
+    color:#EF233C ;
+}
+a:hover{
+    text-decoration: none;
+}
+h1,h2{
+    font-family: goodFont;
+    font-weight: 400;
+}
+h2{
+    font-size: 40px;
+    margin: 0;
+}
+
+h1{
+    font-size: 80px;
+}
+h3{
+    margin: 0;
+}
+
+.uppercase{
+    text-transform: uppercase;
+}
+
+.content{
+    max-width: 950px;
+    margin: 0 auto;
+    padding: 60px 50px;
+    overflow: hidden;
+   
+    
+
+}
+
+.col-narrow{
+    width: 30%;
+    float: left;
+    padding-right: 3%;
+   
+}
+.col-wide{
+    width:70%;
+    float: left;
+
+}
+
+/* Header and footer
+-------------------------*/
+header , footer{
+    background-color:#2B2D42 ;
+    color: #8D99AE;
+}
+
+/* header */
+header h1, header h2{
+    color: #EDF2F4;
+    margin: 0;
+    
+}
+header{
+  padding-top: 50px;
+  position: relative;
+}
+.img{
+ 
+    border-radius: 50%;
+}
+.download{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    
+
+}
+
+.btn{
+    text-decoration: none;
+    background: #EF233C;
+    color: white;
+    padding:10px;
+    display: inline-block;
+}
+/* navigation
+**********************************************/
+nav{
+    text-align: center;
+    position: fixed;
+    width: 100%;
+    background-color: cornsilk;
+    top: 0;
+}
+nav a{
+    display: inline-block;
+    padding: 15px 20px;
+    text-decoration: none;
+    text-transform: capitalize;
+    font-weight: 700;
+}
+
+/*footer */
+
+footer{
+    text-align: center;
+}
+ .contact-info a{
+    background: wheat;
+    padding: 10px;
+    display: inline-block;
+} 
+/* work experins
+-------------------------*/
+.work{
+    background: #EDF2F4;
+}
+h3 ~p{
+    margin: 0;
+}
+.job-description{
+    margin-bottom: 25px;
+}
+.job-description p:first-of-type{
+    margin: 0;
+
+}
+
+/* education
+-------------------------*/ 
+.education{
+    background: linear-gradient(rgba(141,154,174,0.9),rgba(141,154,174,0.2)),
+                url("../images/toronto.jpg") no-repeat fixed;
+
+    background-size: cover;            }
+p + h3{
+    margin-top: 30px; 
+}
+/* Media Queries
+*****************************/
+@media (min-width:900px){
+ 
+.col-narrow{
+    width: 30%;
+    float: left;
+   
+   
+}
+.col-wide{
+    width:70%;
+    float: left;
+
+}   
+}
+@media(max-width:899px){
+
+ header {
+     text-align: center;
+ }   
+ .img{
+     max-width: 400px;
+     
+ }
+
+}
